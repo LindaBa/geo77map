@@ -48,7 +48,9 @@ var basemaps = {
 "Open Thunderforest MAP": Thunderforest_OpenCycleMap
 "Open Map Surfer": OpenMapSurfer_AdminBounds 
 "Open Map Hillshade": OpenMapSurfer_Hillshade 
-}).addTo(mymap);
+
+};
+var legend = L.control.layers(basemaps, null, {}).addTo(mymap);
 
 
 </script>
